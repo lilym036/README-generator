@@ -1,0 +1,12 @@
+{
+	"title": "README Generator",
+	"description": "Creates a professional README",
+	"tableContents": true,
+	"installation": "Open node index.js in the integrated terminal.",
+	"usage": "This can be used to create README's on any projects.",
+	"credits": "None at this time.",
+	"test": "None at this time.",
+	"license": [
+		"MIT License"
+	]
+}
