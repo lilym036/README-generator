@@ -14,7 +14,7 @@
 function generateMarkdown (response) {
   return `# ${response.title}
 
-  ## Description ${response.description}
+  ## Description\n ${response.description}
 
   ## Table of Contents \n ${response.tableContents}
   -[Installation] (#installation)
@@ -44,7 +44,7 @@ Here is my GitHub information [${response.username}] (link)\n
 
 Here is my email: ${response.email}
 
-  `;
+`;
   
 }
 
