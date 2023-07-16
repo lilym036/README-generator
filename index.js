@@ -1,9 +1,15 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+// const url= require('url');
+const generateResponses = require('./utils/generateMarkdown');
+// console.log(generateResponses);
+
 
 // TODO: Create an array of questions for user input
-const questions = [
+// const questions = [
+function questions() {
+return inquirer.prompt ([
     {
         type: 'input',
         message: 'What is the title of the README?',
@@ -32,37 +38,77 @@ const questions = [
     {
         type: 'input',
         message: 'List your collaborators, if any.',
-        name: 'credits',
+        name: 'contributing',
     },
     {
         type: 'input',
-        message: 'What are the test instructions?',
-        name: 'test',
+        message: 'What are the needed test instructions for your project?',
+        name: 'tests',
     },
     {
         type: 'checkbox',
-        message:'Please choose your license type?',
+        message: 'Please choose your license type?',
         name: 'license',
         choices: ['MIT License', 'GNU AGPLv3', 'Apache License 2.0']
-    }
-];
+    },
+    {
+        type: 'input',
+        message: 'Do I have any additional questions?',
+        name: 'questions',
+    },
+    {
+        type: 'input',
+        message: 'Enter your GitHub username.',
+        name: 'username',
+    },
+    {
+        type: 'input',
+    message: 'Enter your email.',
+    name: 'email',
+    },
+
+// ];
+]);
+}
 
 
-inquirer.prompt(questions)
-    .then((response) => {
-        console.log(response);
-        fs.writeFile(`${response.name}.txt`, JSON.stringify(response, null, '\t'), (err) =>
-            err ? console.log(err) : console.log('Success!')
-        );
+// inquirer.prompt(questions)
+//     .then((response) => {
+//         console.log(response);
+//         fs.writeFile('response.txt', JSON.stringify(response, null, '\t'), (err) =>
+//             err ? console.log(err) : console.log('Success!')
+//         );
+//        const generateAnswers= generateResponses(response);
+//     });
 
-    });
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeFile(data) {
+    fs.writeFile('README.md', data,  (err) => 
+    err ? console.log(err) : console.log('Success!')
+      );
+}
+//     fs.writeFile('README.md', JSON.stringify(data, null, '\t'), (err) =>
+//             err ? console.log(err) : console.log('Success!')
+//       );
+// }
 
-// TODO: Create a function to initialize app
-function init() {}
+
+    // TODO: Create a function to initialize app
+// function init() {}
 
 
 // Function call to initialize app
-init();
+// init();
+
+questions() 
+.then((response) => {
+    console.log(response);
+    return generateResponses(response);
+})
+.then ((data) => {
+    console.log(data);
+    return writeFile(data);
+})
+.catch (err => {
+     console.log(err)
+})
