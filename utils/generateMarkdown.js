@@ -14,22 +14,22 @@
 function generateMarkdown (response) {
   return `# ${response.title}
 
-  ## Description\n ${response.description}
+  ## Description \n ${response.description}
 
-  ## Table of Contents \n ${response.tableContents}
-  -[Installation] (#installation)
-  -[Usage] (#usage)
-  -[Contributing] (#contributing)
-  -[Tests] (#tests)
-  -[License] (#license)
-  -[Questions] (#questions)
+  ## Table of Contents \n ${response.tableContents} \n
+  -[Installation] (#installation) \n
+  -[Usage] (#usage) \n
+  -[Contributing] (#contributing) \n
+  -[Tests] (#tests) \n
+  -[License] (#license) \n
+  -[Questions] (#questions) \n
 
   ## Installation \n ${response.installation}
 
 
   ## Usage \n ${response.usage}
 
-  ## Contributing \n ${response.credits}
+  ## Contributing \n ${response.contributing}
 
   ## Tests \n ${response.tests}
 
@@ -40,7 +40,7 @@ function generateMarkdown (response) {
   ## Questions \n ${response.questions}
 
 Please contact me if you have any questions. Below is my contact information:\n
-Here is my GitHub information [${response.username}] (link)\n
+Here is my GitHub information: https://github.com/${response.username}
 
 Here is my email: ${response.email}
 

@@ -1,28 +1,36 @@
 # README Generator
 
-  ## Description Creates a professional README
+  ## Description 
+ Creates a professional README
 
   ## Table of Contents 
- false
-  -[Installation] (#installation)
-  -[Usage] (#usage)
-  -[Contributing] (#contributing)
-  -[Tests] (#tests)
-  -[License] (#license)
-  -[Questions] (#questions)
+ true 
+
+  -[Installation] (#installation) 
+
+  -[Usage] (#usage) 
+
+  -[Contributing] (#contributing) 
+
+  -[Tests] (#tests) 
+
+  -[License] (#license) 
+
+  -[Questions] (#questions) 
+
 
   ## Installation 
- Open node index.js in the integrated terminal.
+ No installation needed.
 
 
   ## Usage 
- This can be used to create README's on any projects.
+ Open node index.js in the integrated terminal.
 
-  ##Contributing 
- undefined
+  ## Contributing 
+ None at this time.
 
   ## Tests 
- No test instrcutions at this time.
+ None at this time.
 
 
   ## License 
@@ -30,13 +38,11 @@
 
 
   ## Questions 
- No additional questions.
+ No
 
 Please contact me if you have any questions. Below is my contact information:
 
-Here is my GitHub information [lilym036] (link)
-
+Here is my GitHub information: https://github.com/lilym036
 
 Here is my email: mejialily036@gmail.com
 
-  
