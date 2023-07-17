@@ -13,34 +13,37 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown (response) {
   return `# ${response.title}
+  https://img.shields.io/badge/license-${response.license}-red
 
-  ## Description \n ${response.description}
+## Description \n ${response.description}
 
-  ## Table of Contents \n ${response.tableContents} \n
-  -[Installation] (#installation) \n
-  -[Usage] (#usage) \n
-  -[Contributing] (#contributing) \n
-  -[Tests] (#tests) \n
-  -[License] (#license) \n
-  -[Questions] (#questions) \n
+## Table of Contents \n ${response.tableContents} \n
+  *[Installation] (#installation) \n
+  *[Usage] (#usage) \n
+  *[Contributing] (#contributing) \n
+  *[Tests] (#tests) \n
+  *[License] (#license) \n
+  *[Questions] (#questions) \n
 
-  ## Installation \n ${response.installation}
-
-
-  ## Usage \n ${response.usage}
-
-  ## Contributing \n ${response.contributing}
-
-  ## Tests \n ${response.tests}
+## Installation \n ${response.installation}
 
 
-  ## License \n ${response.license}
+## Usage \n ${response.usage}
+
+## Contributing \n ${response.contributing}
+
+## Tests \n ${response.tests}
 
 
-  ## Questions \n ${response.questions}
+## License \n ${response.license}
+
+
+## Questions \n 
 
 Please contact me if you have any questions. Below is my contact information:\n
-Here is my GitHub information: https://github.com/${response.username}
+Here is my GitHub information:
+- username: ${response.username}
+- link to profile: https://github.com/${response.username}
 
 Here is my email: ${response.email}
 

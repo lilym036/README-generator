@@ -51,11 +51,11 @@ return inquirer.prompt ([
         name: 'license',
         choices: ['MIT License', 'GNU AGPLv3', 'Apache License 2.0']
     },
-    {
-        type: 'input',
-        message: 'Do I have any additional questions?',
-        name: 'questions',
-    },
+    // {
+    //     type: 'input',
+    //     message: 'Do I have any additional questions?',
+    //     name: 'questions',
+    // },
     {
         type: 'input',
         message: 'Enter your GitHub username.',
@@ -83,7 +83,7 @@ return inquirer.prompt ([
 
 
 function writeFile(data) {
-    fs.writeFile('README.md', data,  (err) => 
+    fs.writeFile('./sample/README.md', data,  (err) => 
     err ? console.log(err) : console.log('Success!')
       );
 }
