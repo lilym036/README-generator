@@ -49,7 +49,7 @@ return inquirer.prompt ([
         type: 'checkbox',
         message: 'Please choose your license type?',
         name: 'license',
-        choices: ['MIT', 'GPL 3.0', 'Apache 2.0', 'none']
+        choices: ['MIT', 'GPL_3.0', 'Apache_2.0']
     },
     // {
     //     type: 'input',
