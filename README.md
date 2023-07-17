@@ -1,48 +1,37 @@
 # README Generator
 
-  ## Description 
- Creates a professional README
+## Description
+This project was created to help software developers efficiently create a professional README for their projects. 
 
-  ## Table of Contents 
- true 
+## Installation
+N/A
 
-  -[Installation] (#installation) 
+## Usage
+Open node index.js in the integrated terminal and answer the questions. The responses will be displayed on the the README. 
 
-  -[Usage] (#usage) 
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-  -[Contributing] (#contributing) 
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
 
-  -[Tests] (#tests) 
+## Credits
 
-  -[License] (#license) 
+List your collaborators, if any, with links to their GitHub profiles.
 
-  -[Questions] (#questions) 
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
+If you followed tutorials, include links to those here as well.
 
-  ## Installation 
- No installation needed.
+## License
 
+MIT License
 
-  ## Usage 
- Open node index.js in the integrated terminal.
+Copyright (c) 2023 Lilibeth Mejia
 
-  ## Contributing 
- None at this time.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-  ## Tests 
- None at this time.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-
-  ## License 
- MIT License
-
-
-  ## Questions 
- No
-
-Please contact me if you have any questions. Below is my contact information:
-
-Here is my GitHub information: https://github.com/lilym036
-
-Here is my email: mejialily036@gmail.com
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 

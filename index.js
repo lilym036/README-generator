@@ -20,11 +20,11 @@ return inquirer.prompt ([
         message: 'Provide a decripction of your project.',
         name: 'description',
     },
-    {
-        type: 'confirm',
-        message: 'Does your README include a Table of Contents?',
-        name: 'tableContents',
-    },
+    // {
+    //     type: 'confirm',
+    //     message: 'Does your README include a Table of Contents?',
+    //     name: 'tableContents',
+    // },
     {
         type: 'input',
         message: 'What are the steps required to install your project?',
@@ -49,7 +49,7 @@ return inquirer.prompt ([
         type: 'checkbox',
         message: 'Please choose your license type?',
         name: 'license',
-        choices: ['MIT License', 'GNU AGPLv3', 'Apache License 2.0']
+        choices: ['MIT', 'GPL 3.0', 'Apache 2.0', 'none']
     },
     // {
     //     type: 'input',
@@ -82,8 +82,8 @@ return inquirer.prompt ([
 //     });
 
 
-function writeFile(data) {
-    fs.writeFile('./sample/README.md', data,  (err) => 
+function writeFile(response) {
+    fs.writeFile('./sample/README.md', response,  (err) => 
     err ? console.log(err) : console.log('Success!')
       );
 }
@@ -105,9 +105,8 @@ questions()
     console.log(response);
     return generateResponses(response);
 })
-.then ((data) => {
-    console.log(data);
-    return writeFile(data);
+.then ((response) => {
+    return writeFile(response);
 })
 .catch (err => {
      console.log(err)

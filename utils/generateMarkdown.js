@@ -12,21 +12,20 @@
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown (response) {
-  return `# ${response.title}
+return `# ${response.title}
   https://img.shields.io/badge/license-${response.license}-red
 
 ## Description \n ${response.description}
 
-## Table of Contents \n ${response.tableContents} \n
-  *[Installation] (#installation) \n
-  *[Usage] (#usage) \n
-  *[Contributing] (#contributing) \n
-  *[Tests] (#tests) \n
-  *[License] (#license) \n
-  *[Questions] (#questions) \n
+## Table of Contents \n
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
 ## Installation \n ${response.installation}
-
 
 ## Usage \n ${response.usage}
 
@@ -34,9 +33,9 @@ function generateMarkdown (response) {
 
 ## Tests \n ${response.tests}
 
-
-## License \n ${response.license}
-
+## License \n 
+This project is covered under the following license:\n
+${response.license}
 
 ## Questions \n 
 
