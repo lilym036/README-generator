@@ -2,37 +2,33 @@
 ![license Apache_2.0](https://img.shields.io/badge/license-Apache_2.0-red)
 
 ## Description 
- Creates a professional README
+Creates a professional README
 
-## Table of Contents 
-
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [License](#license)
 - [Questions](#questions)
 
 ## Installation 
- No steps at this time.
+No steps at this time. 
 
-## Usage 
- Open node index.js in the integrated terminal. This can be used to create README's on any projects.
+## Usage
+Open node index.js in the integrated terminal. This can be used to create README's on any projects.
 
-## Contributing 
- None at this time.
-
-## Tests 
- None at this time.
-
-## License 
- 
+## License
 This project is covered under the following license:
-
 Apache_2.0
 
-## Questions 
- 
+## Contributing 
+None at this time.
+
+## Tests
+None at this time.
+
+## Questions
 
 Please contact me if you have any questions. Below is my contact information:
 

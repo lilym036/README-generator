@@ -3,29 +3,34 @@ function generateMarkdown (response) {
 return `# ${response.title}
 ![license ${response.license}](https://img.shields.io/badge/license-${response.license}-red)
 
-## Description \n ${response.description}
+## Description 
+${response.description}
 
-## Table of Contents \n
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
-- [License](#license)
 - [Questions](#questions)
 
-## Installation \n ${response.installation}
+## Installation 
+${response.installation}
 
-## Usage \n ${response.usage}
+## Usage
+${response.usage}
 
-## Contributing \n ${response.contributing}
-
-## Tests \n ${response.tests}
-
-## License \n 
+## License
 This project is covered under the following license:\n
 ${response.license}
 
-## Questions \n 
+## Contributing 
+${response.contributing}
+
+## Tests
+${response.tests}
+
+## Questions
 
 Please contact me if you have any questions. Below is my contact information:\n
 Here is my GitHub information:
