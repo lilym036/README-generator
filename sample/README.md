@@ -1,8 +1,8 @@
 # README Generator
-![license Apache_2.0](https://img.shields.io/badge/license-Apache_2.0-red)
+![license MIT](https://img.shields.io/badge/license-MIT-red)
 
 ## Description 
-Creates a professional README
+Creates a professional README.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,14 +13,15 @@ Creates a professional README
 - [Questions](#questions)
 
 ## Installation 
-No steps at this time. 
+No installation steps at this time.
 
 ## Usage
-Open node index.js in the integrated terminal. This can be used to create README's on any projects.
+Open node index.js in the integrated terminal. This can be used to create README's on any project.
 
 ## License
 This project is covered under the following license:
-Apache_2.0
+
+MIT
 
 ## Contributing 
 None at this time.
@@ -30,7 +31,7 @@ None at this time.
 
 ## Questions
 
-Please contact me if you have any questions. Below is my contact information:
+Please contact me if you have any questions. Below is my contact information.
 
 Here is my GitHub information:
 - username: lilym036

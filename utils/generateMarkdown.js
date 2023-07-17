@@ -32,7 +32,7 @@ ${response.tests}
 
 ## Questions
 
-Please contact me if you have any questions. Below is my contact information:\n
+Please contact me if you have any questions. Below is my contact information.\n
 Here is my GitHub information:
 - username: ${response.username}
 - link to profile: https://github.com/${response.username}

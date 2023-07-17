@@ -1,13 +1,10 @@
-// TODO: Include packages needed for this application
+// these are the needed packages for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const url= require('url');
 const generateResponses = require('./utils/generateMarkdown');
 // console.log(generateResponses);
 
-
-// TODO: Create an array of questions for user input
-// const questions = [
+// this function holds the questions that the user will be asked
 function questions() {
 return inquirer.prompt ([
     {
@@ -20,11 +17,6 @@ return inquirer.prompt ([
         message: 'Provide a decripction of your project.',
         name: 'description',
     },
-    // {
-    //     type: 'confirm',
-    //     message: 'Does your README include a Table of Contents?',
-    //     name: 'tableContents',
-    // },
     {
         type: 'input',
         message: 'What are the steps required to install your project?',
@@ -51,11 +43,6 @@ return inquirer.prompt ([
         name: 'license',
         choices: ['MIT', 'GPL_3.0', 'Apache_2.0']
     },
-    // {
-    //     type: 'input',
-    //     message: 'Do I have any additional questions?',
-    //     name: 'questions',
-    // },
     {
         type: 'input',
         message: 'Enter your GitHub username.',
@@ -67,7 +54,6 @@ return inquirer.prompt ([
     name: 'email',
     },
 
-// ];
 ]);
 }
 
@@ -93,13 +79,8 @@ function writeFile(response) {
 // }
 
 
-    // TODO: Create a function to initialize app
-// function init() {}
-
 
 // Function call to initialize app
-// init();
-
 questions() 
 .then((response) => {
     console.log(response);
