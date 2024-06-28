@@ -1,8 +1,8 @@
-# README Generator
+# README
 ![license MIT](https://img.shields.io/badge/license-MIT-red)
 
 ## Description 
-Creates a professional README.
+creates a README
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,10 +13,10 @@ Creates a professional README.
 - [Questions](#questions)
 
 ## Installation 
-No installation steps at this time.
+None at this time
 
 ## Usage
-Open node index.js in the integrated terminal. This can be used to create README's on any project.
+Open node index.js
 
 ## License
 This project is covered under the following license:
@@ -24,7 +24,7 @@ This project is covered under the following license:
 MIT
 
 ## Contributing 
-None at this time.
+None at this time
 
 ## Tests
 None at this time.
